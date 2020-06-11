@@ -1,0 +1,191 @@
+/*COLORES*/
+  
+$colors: (
+    verde-claro: #bbded6,
+    verde-oscuro: #61c0bf,
+    rosa-claro: #fae3d9,
+    rosa-oscuro: #ffb6b9,
+    gris-claro: #f5f5f5,
+    gris-oscuro: #454545,
+);
+
+@each $nombre, $color in $colors {
+    .fondo-#{$nombre} {
+        background-color: $color;
+    }
+    .texto-#{$nombre} {
+        color: $color;
+    }
+}
+
+$rosa-oscuro: #ffb6b9;
+$gris-oscuro: #454545;
+$verde-oscuro: #61c0bf;
+
+.puntos-rosas li::before {
+    content: "•";
+    padding-right: 8px;
+    color: $rosa-oscuro;
+    font-size: 25px;
+}
+
+/* FUENTES */
+
+body {
+    color: $gris-oscuro;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+  
+h1 {
+    font-family: 'Glegoo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+  
+h2 {
+    font-family: 'Glegoo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-left: 30px;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-left: 30px;
+    letter-spacing: 2px;
+}
+  
+  
+/*MENU*/
+  
+nav {
+    .nav-link {
+        color: $gris-oscuro;
+        font-weight: 300;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 7px;
+        margin: 10px;
+    }
+  
+    .dropdown-item {
+        color: $gris-oscuro;
+        font-weight: 300;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.2s;
+  
+      &:hover {
+            color: $rosa-oscuro;
+      }
+    }
+}
+  
+  /*IMAGES*/
+
+.img-banner {
+    width: 100vw;
+    max-height: 380px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.logo-grande {
+    width: 180px;
+    height: auto;
+}
+  
+.logo-chico {
+    width: 150px;
+    height: auto;
+}
+  
+.icono-grande {
+    width: 50px;
+    height: auto;
+    margin-top: 20px;
+}
+  
+.icono-chico {
+    width: 30px;
+    height: auto;
+}
+    
+.imagen-chica {
+    width: 400px;
+    height: auto;
+    padding: 15px;
+}
+  
+.imagen-grande {
+    width: 500px;
+    height: auto;
+    padding: 15px;
+}
+    
+  /*FOOTER*/
+  
+footer {
+    font-size: 0.8rem;
+
+    a {
+        color: $gris-oscuro;
+        font-weight: 300;
+        transition: 0.2ms;
+        
+        &:hover {
+            color: $verde-oscuro;
+        }
+    
+    }
+
+    #instagram {
+    transition: 0.2ms;
+  
+        &:hover path {
+                fill: darken($verde-oscuro, 30%);
+            }
+        }
+}
+  
+  /* BANNER MARCAS */
+  
+#banner-marcas {
+    img {
+        filter: grayscale(1);
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+  
+    .opaco {
+        opacity: 0.3;
+    }
+  
+    img:hover {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+}
+  
+  /* RESPONSIVE */
+  
+@media (max-width: 500px) {
+    #banner-marcas {
+        display: none;
+    }
+}
