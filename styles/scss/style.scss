@@ -16,6 +16,9 @@ $colors: (
     .texto-#{$nombre} {
         color: $color;
     }
+    .borde-#{$nombre} {
+        border-color: $color;
+    }
 }
 
 $rosa-oscuro: #ffb6b9;
@@ -40,7 +43,7 @@ body {
 }
   
 h1 {
-    font-family: 'Glegoo', serif;
+    font-family: 'Cinzel', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 2rem;
@@ -48,27 +51,33 @@ h1 {
 }
   
 h2 {
-    font-family: 'Glegoo', serif;
+    font-family: 'Allura', cursive;
     font-style: normal;
-    font-weight: 400;
-    font-size: 1.8rem;
-    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2.5rem;
 }
 
 h3 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
-    padding-left: 30px;
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-weight: 300;
-    font-size: 1.2rem;
-    padding-left: 30px;
-    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
 }
-  
-  
+
+h5 {
+    font-family: 'Allura', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
 /*MENU*/
   
 nav {
