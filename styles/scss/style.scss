@@ -135,18 +135,20 @@ nav {
     height: auto;
 }
     
-.imagen-chica {
-    width: 400px;
+.foto-grande {
+    width: 480px;
     height: auto;
     padding: 15px;
 }
   
 .imagen-grande {
-    width: 500px;
+    width: 400px;
     height: auto;
     padding: 15px;
 }
-    
+
+
+
   /*FOOTER*/
   
 footer {
@@ -164,12 +166,13 @@ footer {
     }
 
     #instagram {
-    transition: 0.2ms;
-  
-        &:hover path {
-                fill: darken($verde-oscuro, 30%);
-            }
+        opacity: 0.75;
+        transition: 0.2ms;
+
+        &:hover {   
+            opacity: 1;
         }
+    }
 }
   
   /* BANNER MARCAS */

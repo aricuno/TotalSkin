@@ -142,13 +142,13 @@ nav .dropdown-item {
   width: 30px;
   height: auto; }
 
-.imagen-chica {
-  width: 400px;
+.foto-grande {
+  width: 480px;
   height: auto;
   padding: 15px; }
 
 .imagen-grande {
-  width: 500px;
+  width: 400px;
   height: auto;
   padding: 15px; }
 
@@ -162,9 +162,10 @@ footer {
     footer a:hover {
       color: #61c0bf; }
   footer #instagram {
+    opacity: 0.75;
     transition: 0.2ms; }
-    footer #instagram:hover path {
-      fill: #276161; }
+    footer #instagram:hover {
+      opacity: 1; }
 
 /* BANNER MARCAS */
 #banner-marcas img {
