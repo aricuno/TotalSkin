@@ -152,18 +152,25 @@ nav .dropdown-item {
   height: auto;
   padding: 15px; }
 
+#datos-contacto a {
+  transition: 0.2s;}
+  #datos-contacto a:hover {
+    text-decoration: none;
+    color: #61c0bf;
+}
+
 /*FOOTER*/
 footer {
   font-size: 0.8rem; }
   footer a {
     color: #454545;
     font-weight: 300;
-    transition: 0.2ms; }
+    transition: 0.2s; }
     footer a:hover {
       color: #61c0bf; }
   footer #instagram {
     opacity: 0.75;
-    transition: 0.2ms; }
+    transition: 0.2s; }
     footer #instagram:hover {
       opacity: 1; }
 
