@@ -1,5 +1,4 @@
-mockup/
-styles/node_modules
+node_modules
 
 # MAC Files
 *.DS_Store
