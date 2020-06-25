@@ -105,6 +105,16 @@ nav {
     }
 }
   
+/*ANIMACIONES*/
+
+#datos-contacto a {
+    transition: 0.2s;
+    &:hover {
+      text-decoration: none;
+      color: $verde-oscuro;
+  }
+}
+
   /*IMAGES*/
 
 .img-banner {

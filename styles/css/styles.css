@@ -118,6 +118,13 @@ nav .dropdown-item {
   nav .dropdown-item:hover {
     color: #ffb6b9; }
 
+/*ANIMACIONES*/
+#datos-contacto a {
+  transition: 0.2s; }
+  #datos-contacto a:hover {
+    text-decoration: none;
+    color: #61c0bf; }
+
 /*IMAGES*/
 .img-banner {
   width: 100vw;
@@ -152,25 +159,18 @@ nav .dropdown-item {
   height: auto;
   padding: 15px; }
 
-#datos-contacto a {
-  transition: 0.2s;}
-  #datos-contacto a:hover {
-    text-decoration: none;
-    color: #61c0bf;
-}
-
 /*FOOTER*/
 footer {
   font-size: 0.8rem; }
   footer a {
     color: #454545;
     font-weight: 300;
-    transition: 0.2s; }
+    transition: 0.2ms; }
     footer a:hover {
       color: #61c0bf; }
   footer #instagram {
     opacity: 0.75;
-    transition: 0.2s; }
+    transition: 0.2ms; }
     footer #instagram:hover {
       opacity: 1; }
 
